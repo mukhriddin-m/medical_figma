@@ -61,7 +61,7 @@ body {
 .header .menu-lists__button {
   width: 100px;
   height: 40px;
-  background-color: blue;
+  background-color: rgb(80, 80, 243);
   color: white;
   margin: 5px;
   border-radius: 20px 30px;
