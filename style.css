@@ -7,7 +7,7 @@ body {
   padding: 0;
 }
 
-.navbar {
+.header {
   width: 100%;
   height: var(--navbar-height);
   background-color: yellow;
@@ -16,7 +16,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar .logo {
+.header .header-logo {
   width: 20%;
   height: 100%;
   background-color: inherit;
@@ -25,7 +25,7 @@ body {
   justify-content: center;
 }
 
-.navbar .lists {
+.header .menu-lists {
   width: 80%;
   height: 100%;
   background-color: inherit;
@@ -34,7 +34,7 @@ body {
   justify-content: flex-end;
 }
 
-.navbar .lists .items {
+.header .menu-lists-items {
   width: 65%;
   height: 100%;
   background-color: inherit;
@@ -43,13 +43,14 @@ body {
   justify-content: center;
 }
 
-.navbar .lists .items ul li {
+.header .menu-lists-items ul li {
   display: inline;
   list-style-type: none;
   margin: 10px;
+  cursor: pointer;
 }
 
-.navbar .lists .items input {
+.header .menu-lists__input {
   width: 100px;
   height: 40px;
   text-align: center;
@@ -57,7 +58,7 @@ body {
   border-radius: 20px 30px;
 }
 
-.navbar .lists .items button {
+.header .menu-lists__button {
   width: 100px;
   height: 40px;
   background-color: blue;
@@ -66,11 +67,14 @@ body {
   border-radius: 20px 30px;
   outline: none;
 }
-.navbar .lists .items button:hover {
+.header .menu-lists__button:hover {
   background-color: #fff;
   color: black;
   transition: 0.4s;
+  cursor: pointer;
 }
+
+
 /*Home Page*/
 
 .home_page {
@@ -147,7 +151,7 @@ body {
 .information .box .services .right {
   width: 70%;
   height: 100%;
-  background-color:rgb(42, 37, 175);
+  background-color: rgb(42, 37, 175);
   display: flex;
   align-items: center;
   justify-content: center;
