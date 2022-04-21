@@ -74,7 +74,6 @@ body {
   cursor: pointer;
 }
 
-
 /*Home Page*/
 
 .home_page {
@@ -88,16 +87,63 @@ body {
 .home_page .left {
   width: 50%;
   height: calc(100vh - var(--navbar-height));
-  background-color: #fff;
+  background-color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   flex-direction: column;
 }
+.home_page .left .title {
+  width: 80%;
+  height: 20%;
+  background-color: inherit;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.home_page .left .text {
+  width: 80%;
+  height: 20%;
+  background-color: inherit;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.home_page .left .btn {
+  width: 80%;
+  height: 20%;
+  background-color: inherit;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.home_page .left .btn {
+  display: flex;
+  align-items: center;
+}
+.home_page .left .btn button {
+  width: 200px;
+  height: 37px;
+  border-radius: 7px;
+  background-color: rgb(75, 75, 210);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home_page .left .btn button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .home_page .right {
   width: 50%;
   height: calc(100vh - var(--navbar-height));
-  background-color: greenyellow;
 }
 
 /* ---------------INFORMATION -------------------*/
@@ -105,7 +151,7 @@ body {
 .information {
   width: 100%;
   height: 200px;
-  background-color: blueviolet;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -114,7 +160,8 @@ body {
 .information .box {
   width: 80%;
   height: 180px;
-  background-color: rgb(48, 46, 55);
+  background-color: rgb(39, 41, 58);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -129,43 +176,43 @@ body {
   align-items: center;
   justify-content: center;
 }
-.information .box .staff .left {
+.information .box .staff .staff_icon {
   width: 30%;
   height: 100%;
-  background-color: rgb(42, 37, 175);
+  background-color: inherit;
 }
-.information .box .staff .right {
+.information .box .staff .staff_text {
   width: 70%;
   height: 100%;
-  background-color: rgb(42, 37, 175);
+  background-color: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.information .box .services .left {
+.information .box .services .services_icon {
   width: 30%;
   height: 100%;
-  background-color: rgb(42, 37, 175);
+  background-color: inherit;
 }
-.information .box .services .right {
+.information .box .services .services_text {
   width: 70%;
   height: 100%;
-  background-color: rgb(42, 37, 175);
+  background-color: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.information .box .appointment .left {
+.information .box .appointment .appointment_icon {
   width: 30%;
   height: 100%;
-  background-color: rgb(42, 37, 175);
+  background-color: inherit;
 }
-.information .box .appointment .right {
+.information .box .appointment .appointment_text {
   width: 70%;
   height: 100%;
-  background-color: rgb(42, 37, 175);
+  background-color: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,9 +224,23 @@ body {
 .services-type {
   width: 100%;
   height: 200px;
-  background-color: rgb(38, 154, 192);
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.type-of {
+  width: 100%;
+  height: 500px;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  
+}
+.type-of .box{
+  width: 200px;
+  height: 200px;
+  background-color: green;
 }
